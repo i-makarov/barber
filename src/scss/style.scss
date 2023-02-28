@@ -28,7 +28,7 @@ $md5: 347.98;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "./global/colors.scss";
 
-@import "./global/null.scss";
+@import "global/null.scss";
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
@@ -73,7 +73,7 @@ body {
 
 h1{
 	font-weight: 700;
-	font-size: 129px;
+	@include adaptiv-font(120, 50, 120);
 	line-height: 157px;
 }
 
@@ -84,13 +84,7 @@ h2 {
 }
 h3 {
     font-weight: 500;
-    font-size: 43px;
-    @media (max-width: 1200px){
-        font-size: 35px;
-    }
-    @media (max-width: 600px){
-        font-size: 25px;
-    }
+    @include adaptiv-font(40, 20, 40);
 }
 
 p{
@@ -188,5 +182,7 @@ position: relative;
     width: 100%;
 }
 
+@import "./global/form.scss";
 @import "header";
+@import "main-section/main-section.scss";
 

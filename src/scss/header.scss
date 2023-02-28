@@ -1,5 +1,43 @@
 .header{
 	background-color: $palette-primary;
-	width: 100px;
-	height: 100px;
+	z-index: 10;
 }
+
+.header {
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 110px;
+		}
+		&__menu {
+			color:#fff;
+		}
+		&__number {
+			color: #fff;
+		}
+.menu {
+		&__body {
+		}
+		&__list{
+			display: flex;
+			font-weight: 600;
+		}
+		&__item {
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+}
+		&__number{
+			font-weight: 500;
+}
+}
+
+.logo{
+	color: #fff;
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 96.5%;
+	letter-spacing: 0.065em;
+}
+
