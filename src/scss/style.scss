@@ -43,11 +43,20 @@ $md5: 347.98;
 //</ОБОЛОЧКА>===========================================================================================================
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 ._container {
-    max-width: $maxWidthContainer + 30 + px;
+    max-width: $maxWidthContainer + 30px + px;
     padding: 0px 15px;
     margin: 0 auto;
     height: 100%;
     width: 100%;
+}
+@media(max-width: 1600px){
+	._container {
+    max-width: 1300 + 30 + px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
@@ -88,9 +97,9 @@ h3 {
 }
 
 p{
-	font-size: 18px;
-	line-height: 22px;
-	text-align: center;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 160%;
 }
 
 ._img {
@@ -185,4 +194,4 @@ position: relative;
 @import "./global/form.scss";
 @import "header";
 @import "main-section/main-section.scss";
-
+@import "./about-me/about-me.scss"
